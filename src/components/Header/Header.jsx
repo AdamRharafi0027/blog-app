@@ -38,15 +38,7 @@ const Header = () => {
             </a>
           </nav>
 
-          {/* Search Bar */}
-          <div className="hidden md:flex items-center bg-white/70 shadow-md backdrop-blur-lg px-4 py-2 rounded-full border border-gray-200">
-            <Search className="w-5 h-5 text-gray-500" />
-            <input
-              type="text"
-              placeholder="Search articles..."
-              className="ml-2 bg-transparent outline-none text-sm w-40"
-            />
-          </div>
+          
 
           {/* Mobile Menu Button */}
           <button className="md:hidden" onClick={() => setOpen(!open)}>

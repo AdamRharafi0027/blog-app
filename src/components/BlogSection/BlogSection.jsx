@@ -1,12 +1,10 @@
-import React from "react";
-import BlogCard from "../BlogCard/BlogCard";
 import BlogPage from "../../pages/BlogPage/BlogPage";
 import { Link } from "react-router-dom";
 
 const BlogSection = () => {
   return (
     <>
-      <BlogPage cardNum={6} />
+      <BlogPage cardNum={6} hideSearch={true} />
 
       <div className="flex justify-center mt-14">
         <Link to={"/blog"}>
