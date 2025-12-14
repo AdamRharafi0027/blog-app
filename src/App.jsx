@@ -1,23 +1,18 @@
-import BlogCard from "./components/BlogCard/BlogCard"
-import BlogPage from "./components/BlogPage/BlogPage"
-import CategoriesPage from "./components/CategoriesPage/CategoriesPage"
-import Footer from "./components/Footer/Footer"
-import Header from "./components/Header/Header"
-import Hero from "./components/Hero/Hero"
 
+import CategoriesPage from "./components/CategoriesPage/CategoriesPage";
+import Hero from "./components/Hero/Hero";
+import BlogSection from "./components/BlogSection/BlogSection";
 
 const App = () => {
-
-
   return (
     <>
-     <Header />
-     <Hero /> 
-      <BlogPage />
+      {/* <Header /> */}
+      <Hero />
+      <BlogSection />
       <CategoriesPage />
-      <Footer />
+      {/* <Footer /> */}
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

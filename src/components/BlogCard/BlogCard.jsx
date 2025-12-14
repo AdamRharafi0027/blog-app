@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function BlogCard({
   image,
   tag,
@@ -5,6 +7,7 @@ export default function BlogCard({
   description,
   author,
   read,
+  url,
 }) {
   return (
     <article className="bg-white rounded-2xl shadow hover:shadow-xl transition p-4 flex flex-col">
@@ -45,9 +48,11 @@ export default function BlogCard({
           </span>
         </div>
 
+        <Link to={url}>
         <button className="px-4 py-2 rounded-full border border-black text-xs font-medium hover:bg-black hover:text-white transition">
           Read More
         </button>
+        </Link>
       </div>
     </article>
   );
