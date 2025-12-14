@@ -3,6 +3,9 @@ import { Search, Menu, X } from "lucide-react";
 import { Route, Routes } from "react-router-dom";
 import App from "../../App";
 import BlogPage from "../../pages/BlogPage/BlogPage";
+import CategoriesPage from "../../pages/CategoriesPage/CategoriesPage";
+import AboutPage from "../../pages/AboutPage/AboutPage";
+import ContactPage from "../../pages/ContactPage/ContactPage";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -82,6 +85,9 @@ const Header = () => {
       <Routes>
         <Route path="/" element={<App />}  />
         <Route path="/blog" element={<BlogPage />}  />
+        <Route path="/categories" element={<CategoriesPage />}  />
+        <Route path="/about" element={<AboutPage />}  />
+        <Route path="/contact" element={<ContactPage />}  />
       </Routes>
     </>
   );

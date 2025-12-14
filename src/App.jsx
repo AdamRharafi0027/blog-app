@@ -1,5 +1,5 @@
 
-import CategoriesPage from "./components/CategoriesPage/CategoriesPage";
+import CategoriesPage from "./pages/CategoriesPage/CategoriesPage";
 import Hero from "./components/Hero/Hero";
 import BlogSection from "./components/BlogSection/BlogSection";
 
