@@ -1,63 +1,66 @@
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden pt-20 pb-28">
-      
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-blue-300/10"></div>
+    <section className="relative overflow-hidden pt-24 pb-32">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-transparent to-blue-300/10" />
 
-      {/* Floating shapes */}
-      <div className="absolute -top-10 -left-10 h-40 w-40 rounded-full bg-blue-400/20 blur-2xl"></div>
-      <div className="absolute bottom-0 right-0 h-56 w-56 rounded-full bg-blue-600/20 blur-3xl"></div>
+      {/* Decorative blobs */}
+      <div className="absolute -top-16 -left-16 h-48 w-48 rounded-full bg-blue-400/20 blur-3xl animate-pulse" />
+      <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-blue-600/20 blur-3xl" />
 
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
         
-        {/* Text Section */}
+        {/* Text */}
         <div className="flex flex-col gap-6">
-          
           <h1 className="text-4xl md:text-6xl font-bold leading-tight text-gray-900">
-            Become <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">Better</span>  
+            Become{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">
+              Better
+            </span>{" "}
             Every Single Day
           </h1>
 
-          <p className="text-lg text-gray-600 leading-relaxed max-w-md">
-            Practical insights on productivity, habits, mindset, and personal growth —  
-            designed to help you unlock your full potential with small daily improvements.
+          <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
+            Practical insights on productivity, habits, mindset, and personal
+            growth — designed to help you unlock your full potential through
+            small daily improvements.
           </p>
 
-          <div className="flex items-center gap-4 mt-4">
-            <a 
+          <div className="flex flex-wrap items-center gap-4 pt-2">
+            <a
               href="/blog"
-              className="px-6 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition shadow-lg"
+              className="px-7 py-3 rounded-full bg-blue-600 text-white font-medium shadow-lg hover:bg-blue-700 hover:shadow-xl transition"
             >
               Start Reading
             </a>
-            <a 
+
+            <a
               href="/categories"
-              className="px-6 py-3 rounded-full border border-gray-300 text-gray-700 font-medium hover:bg-gray-100 transition"
+              className="px-7 py-3 rounded-full border border-gray-300 text-gray-700 font-medium hover:bg-gray-100 transition"
             >
               Explore Topics
             </a>
           </div>
         </div>
 
-        {/* Image Section */}
+        {/* Image */}
         <div className="relative">
-          <div className="absolute -inset-4 bg-gradient-to-br from-blue-500/20 to-blue-200/20 blur-2xl rounded-3xl"></div>
-          
+          {/* Glow */}
+          <div className="absolute -inset-6 bg-gradient-to-br from-blue-500/30 to-blue-200/20 blur-3xl rounded-3xl" />
+
           <img
             src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1000&q=60"
-            alt="Personal Development"
-            className="relative rounded-3xl shadow-xl object-cover w-full max-h-[500px]"
+            alt="Personal development and growth"
+            className="relative rounded-3xl shadow-2xl object-cover w-full max-h-[520px]"
           />
 
-          {/* Floating card */}
-          <div className="absolute -bottom-6 left-6 bg-white/80 backdrop-blur-lg shadow-lg px-5 py-3 rounded-2xl border border-gray-200">
-            <p className="text-gray-700 text-sm">
-              ✨ Inspiring content updated every week
+          {/* Floating badge */}
+          <div className="absolute -bottom-6 left-6 bg-white/80 backdrop-blur-md shadow-lg px-5 py-3 rounded-2xl border border-gray-200">
+            <p className="text-gray-700 text-sm font-medium">
+              ✨ Inspiring content updated weekly
             </p>
           </div>
         </div>
-
       </div>
     </section>
   );
